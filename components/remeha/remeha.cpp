@@ -21,6 +21,7 @@ void RemehaComponent::update() {
 
   this->reading_ = true;
   this->counter_timer_++;
+  ESP_LOGD(TAG, "update() called, counter_timer=%d", this->counter_timer_);
 
   if (this->counter_timer_ >= 8) {
     this->counter_timer_ = 0;
