@@ -153,8 +153,16 @@ See [example-cv-ketel.yaml](example-cv-ketel.yaml) for a complete configuration 
 3. Remove the `platform: custom` sensor block with the lambda
 4. Add the new `remeha:` hub and `platform: remeha` sensors as described above
 
+## License
+
+This project is licensed under the [GNU General Public License v3.0](LICENSE).
+
+Copyright © 2026 [@jghaanstra](https://github.com/jghaanstra)
+
+This is a full rewrite of the original custom component as a native ESPHome external component. The protocol knowledge (command bytes, data offsets, scaling factors) is derived from the original work by kakaki. GPL-3.0 is used to ensure any derivative work remains open source.
+
 ## Credits
 
 Original code: [kakaki/esphome_dietrich](https://github.com/kakaki/esphome_dietrich)
 
-The ESPHome external component (C++ and Python code) in this repository was written by Claude Sonnet 4.6, based on the original custom component logic.
+The ESPHome external component (C++ and Python code) in this repository was written by [GitHub Copilot](https://github.com/features/copilot) (Claude Sonnet 4.6), based on the original custom component logic.
