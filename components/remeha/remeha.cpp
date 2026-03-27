@@ -87,7 +87,7 @@ void RemehaComponent::get_sample_() {
   if (this->read_all_) {
     pub_(fan_speed_setpoint_sensor_, signed_float_((data[30] * 256) + data[29]));
     pub_(fan_speed_sensor_,          signed_float_((data[32] * 256) + data[31]));
-    pub_(ionisation_current_sensor_, data[33]);
+    pub_(ionisation_current_sensor_, data[33] * 0.1f);
     pub_(internal_setpoint_sensor_,  signed_float_((data[35] * 256) + data[34]) * 0.01f);
     pub_(available_power_sensor_,    data[36]);
     pub_(pump_percentage_sensor_,    data[37]);
